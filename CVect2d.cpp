@@ -41,7 +41,7 @@ void CVect2d::setY(float const flt_y)
 {
 	this->y = flt_y;
 }
-
+/*
 void CVect2d::soustVect(CVect2d const& vect)
 {
 	this->x -= vect.x;
@@ -60,8 +60,13 @@ void CVect2d::multVect(CVect2d const& vect)
 	this->x *= vect.x;
 	this->y *= vect.y;
 }
+<<<<<<< Updated upstream
 
 void CVect2d::affiche()
+=======
+*/
+void CVect2d::affiche()const
+>>>>>>> Stashed changes
 {
 	cout << "x : " << this->x <<  " y : " << this->y << endl;
 }

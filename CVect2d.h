@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream> 
 
 class CVect2d {
 	
@@ -19,10 +20,18 @@ public:
 	void setX(float const flt_x);
 	void setY(float const flt_y);
 
+<<<<<<< Updated upstream
 	void soustVect(CVect2d const& vect);
+=======
+;
+
+	/*
+	void soustVect(CVect2d const& vect);
+
+>>>>>>> Stashed changes
 	void addVect(CVect2d const& vect);
 	void multVect(CVect2d const& vect);
-
+	*/
 	friend bool coincide2D(CVect2d const& vect1, CVect2d const& vect2);
 
 	void affiche();
