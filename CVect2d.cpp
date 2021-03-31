@@ -10,34 +10,34 @@ CVect2d::CVect2d()
 	this->y = 0;
 }
 
-CVect2d::CVect2d(CVect2d const& vect)
+CVect2d::CVect2d(const CVect2d  &vect)
 {
 	this->x = vect.x;
 	this->y = vect.y;
 }
 
-CVect2d::CVect2d(float flt_x, float flt_y)
+CVect2d::CVect2d(const float flt_x, const float flt_y)
 {
 	this->x = flt_x;
 	this->y = flt_y;
 }
 
-float CVect2d::getX()
+float CVect2d::getX()const
 {
 	return this->x;
 }
 
-float CVect2d::gety()
+float CVect2d::getY()const
 {
 	return this->y;
 }
 
-void CVect2d::setX(float const flt_x)
+void CVect2d::setX(const float  flt_x)
 {
 	this->x = flt_x;
 }
 
-void CVect2d::setY(float const flt_y)
+void CVect2d::setY(const float  flt_y)
 {
 	this->y = flt_y;
 }
@@ -61,7 +61,7 @@ void CVect2d::multVect(CVect2d const& vect)
 	this->y *= vect.y;
 }
 
-void CVect2d::affiche()
+void CVect2d::affiche()const
 {
 	cout << "x : " << this->x <<  " y : " << this->y << endl;
 }
